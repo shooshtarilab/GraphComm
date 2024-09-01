@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if the correct number of arguments were passed
+if [ "$#" -ne 2 ]; then
+    echo ""
+    echo "usage: $0 <input_matrix_name> <folder_name>"
+    echo ""
+    echo "error: missing positional arguments"
+    echo ""
+    echo "positional arguments:"
+    echo "  <input_matrix_name>: Name of the input gene expression matrix file. Should be in the root of the <folder_name> folder."
+    echo "  <folder_name>: Name of the folder the <input_matrix_name> is placed in. Will be used for the name of the output folder. Should be placed under <PROJECT_ROOT>/data/Raw_Data."
+    exit 1
+fi
+
+# Execute the Python script with command line arguments
+python3 run.py "$1" "$2"
