@@ -1,0 +1,26 @@
+anndata
+liana
+matplotlib
+numpy
+omnipath
+pandas
+rdflib
+scanpy
+scprep
+torch
+leidenalg
+datatable
+scikit-learn
+tqdm
+scipy
+modin[all]
+dask
+dask[dataframe]
+
+# !pip install -q torch-scatter -f https://data.pyg.org/whl/torch-${TORCH}.html
+# !pip install -q torch-sparse -f https://data.pyg.org/whl/torch-${TORCH}.html
+# !pip install -q git+https://github.com/pyg-team/pytorch_geometric.git
+
+# pip install torch-sparse -f https://data.pyg.org/whl/torch-2.2.0+cu121.html (for GPU with CUDA 12.1)
+# pip install torch-scatter -f https://data.pyg.org/whl/torch-2.2.0+cu121.html (for GPU with CUDA 12.1)
+# pip install torch-cluster -f https://data.pyg.org/whl/torch-2.2.0+cu121.html (for GPU with CUDA 12.1)
